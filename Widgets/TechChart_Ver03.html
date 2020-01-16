@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!	<meta http-equiv="refresh" content="600">
+</head>
+<div class="tradingview-widget-container">
+	<div id="tradingview_13934"></div>
+	<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+	<script language="javascript" type="text/javascript">
+	var hours = new Date().getHours();
+	var minutes = new Date().getMinutes();
+	if ((hours >= 15 && minutes >= 30) || hours >= 16) {
+		 new TradingView.widget(
+		  {
+		  "width": 760,
+		  "height": 464,
+		  "symbol": "NASDAQ:ACWI",
+		  "interval": "5",
+		  "timezone": "Europe/Berlin",
+		  "theme": "Light",
+		  "style": "3",
+		  "locale": "es",
+		  "toolbar_bg": "#f1f3f6",
+		  "enable_publishing": false,
+		  "withdateranges": true,
+		  "save_image": false,
+		  "allow_symbol_change": true,
+		  "container_id": "tradingview_13934"
+		}
+		)
+		
+	}
+	else {
+	  new TradingView.widget(
+		  {
+		  "width": 760,
+		  "height": 464,
+		  "symbol": "MIL:ACWI",
+		  "interval": "5",
+		  "timezone": "Europe/Berlin",
+		  "theme": "Light",
+		  "style": "3",
+		  "locale": "es",
+		  "toolbar_bg": "#f1f3f6",
+		  "enable_publishing": false,
+		  "withdateranges": true,
+		  "save_image": false,
+		  "allow_symbol_change": true,
+		  "container_id": "tradingview_13934"
+		}
+	)
+	}
+	</script>
+</div>
+</html>
